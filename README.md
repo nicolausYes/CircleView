@@ -1,5 +1,5 @@
 # CircleView
-===============
+
 Simple library to draw one or two color Circle Views with or without a border with click and select support.
 
 Quick Look
