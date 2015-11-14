@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CircleView</string>
+    <string name="one_color_views">One color views:</string>
+    <string name="one_color_without_border">One color views without border and not full size:</string>
+    <string name="two_colors">Views with two colors + selectable:</string>
 </resources>

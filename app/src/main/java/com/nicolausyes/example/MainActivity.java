@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.nicolausyes.circleview.BaseCircleView;
 import com.nicolausyes.circleview.CircleView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         ViewGroup viewGroup = (ViewGroup)findViewById(R.id.main);
         for(int i = 0; i < viewGroup.getChildCount(); i++ )
             viewGroup.getChildAt(i).setOnClickListener(onClickListener);
-
-        ((CircleView)findViewById(R.id.id4)).setColor(Color.BLACK);
-        ((CircleView)findViewById(R.id.id4)).setSecondColor(Color.MAGENTA);
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             ViewGroup viewGroup = (ViewGroup)findViewById(R.id.main);
             for(int i = 0; i < viewGroup.getChildCount(); i++ ) {
-                CircleView circleView = (CircleView) viewGroup.getChildAt(i);
+                BaseCircleView circleView = (BaseCircleView) viewGroup.getChildAt(i);
                 circleView.setSelected(circleView.getId() == v.getId());
             }
         }

@@ -1,132 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center_horizontal"
-    android:useDefaultMargins="false"
-    android:alignmentMode="alignBounds"
-    android:columnOrderPreserved="false"
-    android:columnCount="4">
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:text="@string/one_color_views"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-   <!-- <com.nicolausyes.circleview.CircleView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_color="@android:color/secondary_text_light_nodisable"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#00000000"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#512DA8"
+            app:cv_selectable="true"
+            app:cv_selectColor="#FFEA00" />
 
-    <com.nicolausyes.circleview.CircleView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_border="true"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#00000000"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#FFCA28"
+            app:cv_border="true"
+            app:cv_borderColor="#FF2074b9"
+            app:cv_borderWidth="@dimen/border_size"
+            app:cv_selectable="true"
+            app:cv_selectColor="#E040FB"
+            app:cv_selectBorderColor="#18FFFF"
+            app:cv_selectBorderWidth="@dimen/border_size" />
 
-    <com.nicolausyes.circleview.CircleView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_border="true"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#FFFF0000"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#7CB342"
+            app:cv_border="true"
+            app:cv_borderColor="#d32f2f"
+            app:cv_borderWidth="@dimen/border_size"
+            app:cv_selectable="true"
+            app:cv_selectColor="#FFFF00"
+            app:cv_selectBorderColor="#d32f2f"
+            app:cv_selectBorderWidth="@dimen/border_size" />
 
-    <com.nicolausyes.circleview.CircleView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_fillRadius="24dp"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#FFFF0000"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />-->
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#6D4C41"
+            app:cv_selectable="true"
+            app:cv_selectColor="#C6FF00"
+            app:cv_selectBorderColor="#607D8B"
+            app:cv_selectBorderWidth="@dimen/border_size"/>
+        
+    </LinearLayout>
 
-    <com.nicolausyes.circleview.CircleView
-        android:id="@+id/id1"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_fillRadius="24dp"
-        app:cv_color="#FFFF0000"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#FFFF0000"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:text="@string/one_color_without_border"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <com.nicolausyes.circleview.CircleView
-        android:id="@+id/id2"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_fillRadius="24dp"
-        app:cv_color="#FF00FF00"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#FF00FF00"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#f44336"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_selectable="true"
+            app:cv_selectColor="#f44336"
+            app:cv_selectBorderColor="#009688"
+            app:cv_selectBorderWidth="@dimen/border_size" />
 
-    <com.nicolausyes.circleview.CircleView
-        android:id="@+id/id3"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_fillRadius="24dp"
-        app:cv_color="#FF0000FF"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="#FF0000FF"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        <com.nicolausyes.circleview.CircleView
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_color="#26A69A"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_selectable="true"
+            app:cv_selectColor="#29B6F6"
+            app:cv_selectBorderColor="#FFC400"
+            app:cv_selectBorderWidth="@dimen/border_size" />
 
-    <com.nicolausyes.circleview.CircleView
-        android:id="@+id/id4"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cv_fillRadius="24dp"
-        app:cv_color="@color/colorPrimary"
-        app:cv_secondColor="@color/colorAccent"
-        app:cv_border="false"
-        app:cv_borderColor="#aa56FFfc"
-        app:cv_borderWidth="8dp"
-        app:cv_selectable="true"
-        app:cv_selectColor="@color/colorPrimary"
-        app:cv_selectBorderColor="#aa56FFfc"
-        app:cv_selectBorderWidth="8dp" />
+        
+    </LinearLayout>
 
-</GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:text="@string/two_colors"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main">
+
+
+        <com.nicolausyes.circleview.TwoColorsCircleView
+            android:id="@+id/id1"
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_firstColor="#00BCD4"
+            app:cv_secondColor="#FF5722"
+            app:cv_firstColorStartAngle="-90"
+            app:cv_firstColorSweepAngle="-180"
+            app:cv_secondColorStartAngle="90"
+            app:cv_secondColorSweepAngle="-180"
+            app:cv_selectable="true"
+            app:cv_selectBorderColor="#FF2074b9"
+            app:cv_selectBorderWidth="@dimen/border_size" />
+
+        <com.nicolausyes.circleview.TwoColorsCircleView
+            android:id="@+id/id2"
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_firstColor="#7986CB"
+            app:cv_secondColor="#DCE775"
+            app:cv_firstColorStartAngle="-45"
+            app:cv_firstColorSweepAngle="-270"
+            app:cv_secondColorStartAngle="-45"
+            app:cv_secondColorSweepAngle="150"
+            app:cv_useCenter="false"
+            app:cv_selectable="true"
+            app:cv_selectBorderColor="#FF2074b9"
+            app:cv_selectBorderWidth="@dimen/border_size" />
+
+        <com.nicolausyes.circleview.TwoColorsCircleView
+            android:id="@+id/id3"
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_firstColor="#3E2723"
+            app:cv_secondColor="#ff1744"
+            app:cv_firstColorStartAngle="-45"
+            app:cv_firstColorSweepAngle="-270"
+            app:cv_secondColorStartAngle="-45"
+            app:cv_secondColorSweepAngle="90"
+            app:cv_selectable="true"
+            app:cv_selectBorderColor="#FF2074b9"
+            app:cv_selectBorderWidth="@dimen/border_size" />
+
+        <com.nicolausyes.circleview.TwoColorsCircleView
+            android:id="@+id/id4"
+            android:layout_width="@dimen/view_size"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_margin"
+            android:clickable="true"
+            app:cv_fillRadius="@dimen/view_radius"
+            app:cv_firstColor="#FFEE58"
+            app:cv_secondColor="#1DE9B6"
+            app:cv_firstColorStartAngle="-245"
+            app:cv_firstColorSweepAngle="310"
+            app:cv_secondColorStartAngle="-245"
+            app:cv_secondColorSweepAngle="-50"
+            app:cv_selectable="true"
+            app:cv_selectBorderColor="#FF2074b9"
+            app:cv_selectBorderWidth="@dimen/border_size" />
+
+
+
+    </LinearLayout>
+    
+
+
+
+</LinearLayout>
