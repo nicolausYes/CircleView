@@ -186,6 +186,14 @@ public class BaseCircleView extends View {
     }
 
     /**
+     *
+     * @return selector border width
+     */
+    public int getSelectBorderWidth() {
+        return mSelectBorderWidth;
+    }
+
+    /**
      * Sets the border color to be drawn around the CircleView
      * during click events when the select is enabled.
      * @param selectBorderColor The color (including alpha) to set for the select border.
