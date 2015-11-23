@@ -37,6 +37,7 @@ public class BaseCircleView extends View {
     private RectF mRect;
 
     // Objects used for the actual drawing
+    private Paint mPaintFill;
     private Paint mPaintBorder;
     private Paint mPaintSelectBorder;
 
@@ -75,6 +76,8 @@ public class BaseCircleView extends View {
         mPaintSelectBorder = new Paint();
         mPaintSelectBorder.setAntiAlias(true);
         mPaintSelectBorder.setStyle(Paint.Style.STROKE);
+        mPaintFill = new Paint();
+        mPaintFill.setAntiAlias(true);
 
         // Load the styled attributes and set their properties
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.BaseCircleView, defStyle, 0);
@@ -98,6 +101,8 @@ public class BaseCircleView extends View {
         setSelectBorderWidth(attributes.getDimensionPixelOffset(R.styleable.BaseCircleView_cv_selectBorderWidth, 0));
         setSelectBorderColor(attributes.getColor(R.styleable.BaseCircleView_cv_selectBorderColor, Color.TRANSPARENT));
         //}
+
+        setFillColor(attributes.getColor(R.styleable.BaseCircleView_cv_fillColor, Color.TRANSPARENT));
 
         mBorderRect = new RectF();
         mSelectBorderRect = new RectF();
@@ -204,6 +209,15 @@ public class BaseCircleView extends View {
         invalidate();
     }
 
+    /**
+     *
+     * @param color fill color
+     */
+    public void setFillColor(int color) {
+        if(mPaintFill != null)
+            mPaintFill.setColor(color);
+    }
+
     public int getSelectBorderColor() {
         return mPaintSelectBorder.getColor();
     }
@@ -227,6 +241,8 @@ public class BaseCircleView extends View {
         int radius = ((mCanvasSize - (Math.max(mCanvasSize - mFillRadius * 2, outerWidth * 2))) / 2);
         int margin = (mCanvasSize - radius * 2) / 2;
         mRect.set(margin, margin, mCanvasSize - margin, mCanvasSize - margin);
+
+        canvas.drawCircle(getWidth() / 2, getHeight() / 2, getWidth() / 2 - getSelectBorderWidth(), mPaintFill);
     }
 
     @Override

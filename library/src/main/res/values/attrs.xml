@@ -4,6 +4,8 @@
 	<!-- CircleView Custom Styling -->
 	<declare-styleable name="BaseCircleView">
 
+		<!-- A color that will fill empty space between circle and border -->
+		<attr name="cv_fillColor" format="color"/>
 		<!-- Specify radius if circle suppose to be not a full size of a view -->
 		<attr name="cv_fillRadius" format="dimension"/>
 		<!-- Whether or not to draw a border around the view. -->
