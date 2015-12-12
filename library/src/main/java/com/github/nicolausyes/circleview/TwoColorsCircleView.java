@@ -1,4 +1,4 @@
-package com.nicolausyes.circleview;
+package com.github.nicolausyes.circleview;
 
 import android.annotation.TargetApi;
 import android.content.Context;

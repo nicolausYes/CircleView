@@ -22,7 +22,7 @@ Usage
 Library contains two types of views. `CircleView` and `TwoColorsCircleView`. They have some common and unique properties.
 
 ```xml
-<com.nicolausyes.circleview.CircleView
+<com.github.nicolausyes.circleview.CircleView
     android:layout_width="@dimen/view_size"
     android:layout_height="@dimen/view_size"
     android:clickable="true"
@@ -36,7 +36,7 @@ Library contains two types of views. `CircleView` and `TwoColorsCircleView`. The
     app:cv_selectBorderWidth="@dimen/border_size" />
 ```
 ```xml
-<com.nicolausyes.circleview.TwoColorsCircleView
+<com.github.nicolausyes.circleview.TwoColorsCircleView
     android:layout_width="@dimen/view_size"
     android:layout_height="@dimen/view_size"
     android:clickable="true"

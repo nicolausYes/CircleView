@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -26,7 +26,7 @@
             app:cv_selectable="true"
             app:cv_selectColor="#FFEA00" />
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -40,7 +40,7 @@
             app:cv_selectBorderColor="#18FFFF"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -54,7 +54,7 @@
             app:cv_selectBorderColor="#d32f2f"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -90,7 +90,7 @@
             app:cv_selectBorderColor="#009688"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.CircleView
+        <com.github.nicolausyes.circleview.CircleView
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
             android:layout_margin="@dimen/view_margin"
@@ -119,7 +119,7 @@
         android:id="@+id/main">
 
 
-        <com.nicolausyes.circleview.TwoColorsCircleView
+        <com.github.nicolausyes.circleview.TwoColorsCircleView
             android:id="@+id/id1"
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
@@ -136,7 +136,7 @@
             app:cv_selectBorderColor="#FF2074b9"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.TwoColorsCircleView
+        <com.github.nicolausyes.circleview.TwoColorsCircleView
             android:id="@+id/id2"
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
@@ -154,7 +154,7 @@
             app:cv_selectBorderColor="#FF2074b9"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.TwoColorsCircleView
+        <com.github.nicolausyes.circleview.TwoColorsCircleView
             android:id="@+id/id3"
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"
@@ -171,7 +171,7 @@
             app:cv_selectBorderColor="#FF2074b9"
             app:cv_selectBorderWidth="@dimen/border_size" />
 
-        <com.nicolausyes.circleview.TwoColorsCircleView
+        <com.github.nicolausyes.circleview.TwoColorsCircleView
             android:id="@+id/id4"
             android:layout_width="@dimen/view_size"
             android:layout_height="@dimen/view_size"

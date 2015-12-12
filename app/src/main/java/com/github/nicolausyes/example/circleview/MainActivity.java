@@ -1,4 +1,4 @@
-package com.nicolausyes.example;
+package com.github.nicolausyes.example.circleview;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nicolausyes.circleview.BaseCircleView;
-import com.nicolausyes.circleview.CircleView;
+import com.github.nicolausyes.circleview.BaseCircleView;
+import com.github.nicolausyes.circleview.CircleView;
+import com.nicolausyes.example.R;
 
 public class MainActivity extends AppCompatActivity {
 
