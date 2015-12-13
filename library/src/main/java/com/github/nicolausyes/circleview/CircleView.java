@@ -22,6 +22,8 @@ public class CircleView extends BaseCircleView {
 	private ColorFilter mColorFilter;
 	private ColorFilter mSelectColorFilter;
 
+	int mColor;
+
 	public CircleView(Context context) {
 		this(context, null, R.styleable.CircleViewStyle_circleViewDefault);
 	}
@@ -70,6 +72,7 @@ public class CircleView extends BaseCircleView {
 	 * @param color The new color (including alpha) to set.
 	 */
 	public void setColor(int color) {
+		mColor = color;
 		mColorFilter = new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP);
 		invalidate();
 	}
@@ -84,6 +87,14 @@ public class CircleView extends BaseCircleView {
 		invalidate();
 	}
 
+	/**
+	 * Returns color
+	 * @return color
+	 */
+	public int getColor() {
+		return mColor;
+	}
+
 	@Override
 	public void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
@@ -91,5 +102,4 @@ public class CircleView extends BaseCircleView {
 		mPaint.setColorFilter( isSelected() ? mSelectColorFilter : mColorFilter);
 		canvas.drawArc(getRect(), 0, 360, false, mPaint);
 	}
-
 }

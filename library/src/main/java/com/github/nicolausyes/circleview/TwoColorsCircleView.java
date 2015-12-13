@@ -18,6 +18,10 @@ import android.util.AttributeSet;
 public class TwoColorsCircleView extends BaseCircleView {
 
     private Paint mPaint;
+
+    private int mFirstColor;
+    private int mSecondColor;
+
     private ColorFilter mFirstColorFilter;
     private ColorFilter mSecondColorFilter;
 
@@ -86,6 +90,7 @@ public class TwoColorsCircleView extends BaseCircleView {
      * @param firstColor The new color (including alpha) to set.
      */
     public void setFirstColor(int firstColor) {
+        mFirstColor = firstColor;
         mFirstColorFilter = new PorterDuffColorFilter(firstColor, PorterDuff.Mode.SRC_ATOP);
         invalidate();
     }
@@ -95,8 +100,25 @@ public class TwoColorsCircleView extends BaseCircleView {
      * @param secondColor The new color (including alpha) to set.
      */
     public void setSecondColor(int secondColor) {
+        mSecondColor = secondColor;
         mSecondColorFilter = new PorterDuffColorFilter(secondColor, PorterDuff.Mode.SRC_ATOP);
         invalidate();
+    }
+
+    /**
+     * Returns first color
+     * @return first color
+     */
+    public int getFirstColor() {
+        return mFirstColor;
+    }
+
+    /**
+     * Returns second color
+     * @return second color
+     */
+    public int getSecondColor() {
+        return mSecondColor;
     }
 
     @Override
