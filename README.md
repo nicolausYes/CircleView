@@ -87,7 +87,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.nicolausYes:CircleView:0.1'
+    compile 'com.github.nicolausYes:CircleView:0.2.2'
 }
 
 ```
