@@ -224,7 +224,6 @@ public class BaseCircleView extends View {
 
     @Override
     public void onDraw(Canvas canvas) {
-
         int outerWidth = 0;
 
         if(mIsSelectable && isSelected()) { // Draw the select border & apply the select filter, if applicable
@@ -248,7 +247,7 @@ public class BaseCircleView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        mCanvasSize = Math.max(getWidth(), getHeight());
+        mCanvasSize = Math.max(getMeasuredWidth(), getMeasuredHeight());
         if(!mIsRadiusSetByUser)
             mFillRadius = mCanvasSize / 2;
     }

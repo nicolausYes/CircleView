@@ -123,7 +123,6 @@ public class TwoColorsCircleView extends BaseCircleView {
 
     @Override
     public void onDraw(Canvas canvas) {
-
         super.onDraw(canvas);
         mPaint.setColorFilter(mFirstColorFilter);
         canvas.drawArc(getRect(), mFirstColorStartAngle, mFirstColorSweepAngle, mUseCenter, mPaint);
